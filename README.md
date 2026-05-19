@@ -1,2 +1,3 @@
 # RGSTC-Drone-Inspection-
 Autonomous drone script for high-voltage insulator inspection using YOLOv8n, MAVLink, and Raspberry Pi — with real-time distance hold, frame centering, and AUTO/VISUAL mode switching.
+This project enables a Raspberry Pi-mounted drone to autonomously detect and inspect insulators on high-voltage transmission lines. Using a YOLOv8 nano model for real-time object detection, the system estimates the distance to the insulator via pinhole camera math, maintains a safe 8-metre stand-off, and keeps the target centred in the camera frame — all through MAVLink velocity commands sent to a Pixhawk flight controller. The drone can seamlessly switch between a pre-planned Mission Planner AUTO mission and live camera-guided VISUAL control.
